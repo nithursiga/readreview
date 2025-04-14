@@ -9,40 +9,17 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // const handlePrediction = async (formData) => {
-  //   setLoading(true);
-  //   setError('');
-  //   setPrediction(null);
-  
-  //   try {
-  //     const response = await fetch('http://localhost:8000/predict', {
-  //       method: 'POST',
-  //       body: formData, // no need for JSON.stringify
-  //     });
-  
-  //     if (!response.ok) {
-  //       throw new Error('Server error while predicting.');
-  //     }
-  
-  //     const data = await response.json();
-  //     setPrediction(data);
-  //   } catch (err) {
-  //     setError(err.message || 'Something went wrong.');
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
   const handlePrediction = async (formData) => {
   setLoading(true);
   setError('');
   setPrediction(null);
 
   try {
-    const response = await fetch('http://localhost:8000/predict', {
+    const response = await fetch('https://ngrok.com/r/iep/predict', {
       method: 'POST',
       body: formData
     });
+    
 
     if (!response.ok) {
       throw new Error('Server error while predicting.');
