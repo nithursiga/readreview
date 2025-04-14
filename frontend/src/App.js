@@ -15,7 +15,7 @@ function App() {
   setPrediction(null);
 
   try {
-    const response = await fetch('https://ngrok.com/r/aep/predict', {
+    const response = await fetch('https://ngrok.com/r/aep', {
       method: 'POST',
       body: formData
     });
