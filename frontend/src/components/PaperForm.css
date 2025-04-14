@@ -1,0 +1,48 @@
+.form-title {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .drop-area {
+    border: 2px dashed #a5b4fc;
+    background-color: #f0f4ff;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .drop-area.highlight {
+    background-color: #e0e7ff;
+    border-color: #6366f1;
+  }
+  
+  .upload-label {
+    font-size: 1.1rem;
+    color: #6366f1;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .upload-label span {
+    text-decoration: underline;
+  }
+  
+  .file-name {
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
