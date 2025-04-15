@@ -16,6 +16,7 @@ import torch
 
 app = FastAPI()
 
+
 # Allow frontend connection (CORS)
 app.add_middleware(
     CORSMiddleware,
